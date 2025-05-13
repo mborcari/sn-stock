@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cfab766493a5269082de398efaba10ce" label="stock" max_length="40" name="x_1540701_sn_stock_stock" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Assignee to" max_length="32" name="assignee_to" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number 2" max_length="40" name="number_2" type="string"/>
+        <index name="index">
+            <element name="assignee_to"/>
+        </index>
+    </element>
+</database>
